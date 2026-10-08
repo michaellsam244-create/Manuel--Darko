@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Manuel Darko | UPSA Student & Young Entrepreneur</title>
+
+    <meta name="description"
+        content="Manuel Darko is a student of the University of Professional Studies, Accra (UPSA), and a young entrepreneur. Learn more about Manuel Darko, his education, ambitions and achievements.">
+
+    <meta name="author" content="Manuel Darko">
+
+    <meta name="robots" content="index, follow">
+
+    <!-- Google / Social Media -->
+    <meta property="og:title"
+        content="Manuel Darko | UPSA Student & Young Entrepreneur">
+
+    <meta property="og:description"
+        content="Learn more about Manuel Darko, a UPSA student and young entrepreneur.">
+
+    <meta property="og:type" content="profile">
+
+    <meta property="og:url"
+        content="https://YOUR-USERNAME.github.io/manuel-darko/">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f7fb;
+            color: #172033;
+            line-height: 1.6;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
+            padding: 18px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 21px;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #172033;
+            margin-left: 25px;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: #2563eb;
+        }
+
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 70px 7%;
+            background: linear-gradient(135deg, #eef4ff, #ffffff);
+        }
+
+        .hero-content {
+            max-width: 1100px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1.3fr 0.7fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #dbeafe;
+            color: #1d4ed8;
+            padding: 8px 15px;
+            border-radius: 30px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: clamp(50px, 8vw, 90px);
+            line-height: 0.95;
+            margin-bottom: 25px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #526075;
+            max-width: 650px;
+            margin-bottom: 30px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 23px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .primary {
+            background: #2563eb;
+            color: white;
+        }
+
+        .secondary {
+            border: 1px solid #cbd5e1;
+            color: #172033;
+            background: white;
+        }
+
+        .photo-box {
+            height: 420px;
+            border-radius: 30px;
+            background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 100px;
+            font-weight: 800;
+            color: #2563eb;
+            overflow: hidden;
+        }
+
+        .profile-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        section {
+            padding: 90px 7%;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .section-title {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .section-text {
+            max-width: 800px;
+            color: #596579;
+            font-size: 18px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+            margin-top: 35px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 18px;
+            border: 1px solid #e5e7eb;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.04);
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #64748b;
+        }
+
+        .wealth {
+            background: #111827;
+            color: white;
+            text-align: center;
+        }
+
+        .wealth .section-text {
+            margin: auto;
+            color: #cbd5e1;
+        }
+
+        .wealth-number {
+            font-size: clamp(45px, 7vw, 80px);
+            font-weight: 900;
+            margin: 25px 0 10px;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 25px;
+        }
+
+        .tag-item {
+            background: #e0e7ff;
+            color: #3730a3;
+            padding: 10px 16px;
+            border-radius: 30px;
+            font-weight: 600;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .email {
+            display: inline-block;
+            margin-top: 25px;
+            font-size: 22px;
+            color: #2563eb;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        footer {
+            background: #0f172a;
+            color: #94a3b8;
+            text-align: center;
+            padding: 30px;
+        }
+
+        @media (max-width: 800px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+                font-size: 14px;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+            }
+
+            .photo-box {
+                height: 330px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 60px;
+            }
+        }
+    </style>
+
+    <!-- Google structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "mainEntity": {
+            "@type": "Person",
+            "name": "Manuel Darko",
+            "email": "manuel244@gmail.com",
+            "description": "Manuel Darko is a student of the University of Professional Studies, Accra (UPSA) and a young entrepreneur.",
+            "alumniOf": {
+                "@type": "CollegeOrUniversity",
+                "name": "University of Professional Studies, Accra"
+            }
+        }
+    }
+    </script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">MANUEL DARKO</div>
+
+        <div>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+
+    <!-- Hero -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div>
+
+                <span class="tag">UPSA STUDENT • ENTREPRENEUR</span>
+
+                <h1>Manuel<br>Darko.</h1>
+
+                <p>
+                    Student of the University of Professional Studies,
+                    Accra (UPSA), with a vision for business, technology,
+                    personal growth and success.
+                </p>
+
+                <div class="buttons">
+                    <a href="#about" class="btn primary">
+                        Discover More
+                    </a>
+
+                    <a href="#contact" class="btn secondary">
+                        Contact Manuel
+                    </a>
+                </div>
+
+            </div>
+
+
+            <!-- PHOTO -->
+            <div class="photo-box">
+    <img
+        src="manuel-darko.jpg"
+        alt="Manuel Darko"
+        class="profile-image">
+</div>
+
+              
+              
+
+    
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                About Manuel Darko
+            </h2>
+
+            <p class="section-text">
+                Manuel Darko is a student of the University of
+                Professional Studies, Accra (UPSA). He is focused
+                on education, entrepreneurship and building a
+                successful future.
+            </p>
+
+            <div class="tags">
+
+                <span class="tag-item">UPSA Student</span>
+                <span class="tag-item">Entrepreneur</span>
+                <span class="tag-item">Ambitious</span>
+                <span class="tag-item">Future-Focused</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Education -->
+    <section id="education">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Education
+            </h2>
+
+            <div class="cards">
+
+                <div class="card">
+
+                    <h3>
+                        University of Professional Studies, Accra
+                    </h3>
+
+                    <p>
+                        UPSA
+                    </p>
+
+                    <p>
+                        Student
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>
+                        Academic Development
+                    </h3>
+
+                    <p>
+                        Developing knowledge, professional skills
+                        and experience for the future.
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>
+                        Future Goals
+                    </h3>
+
+                    <p>
+                        Building businesses, creating opportunities
+                        and achieving long-term success.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Achievements / Wealth -->
+    <section id="achievements" class="wealth">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Manuel Darko
+            </h2>
+
+            <p class="section-text">
+                Young entrepreneur and ambitious student with
+                a vision for significant financial success.
+            </p>
+
+            <div class="wealth-number">
+                $200 Million
+            </div>
+
+            <p>
+                Stated / personal-profile net worth figure
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Contact Manuel
+            </h2>
+
+            <p class="section-text" style="margin:auto;">
+                For professional enquiries, business opportunities
+                and other legitimate enquiries, contact Manuel Darko.
+            </p>
+
+            <a
+                class="email"
+                href="mailto:manuel244@gmail.com">
+                manuel244@gmail.com
+            </a>
+
+            <br><br>
+
+            <p>
+                Phone: 055438215
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Manuel Darko. All rights reserved.
+        </p>
+
+        <p>
+            University of Professional Studies, Accra (UPSA)
+        </p>
+
+    </footer>
+
+</body>
+</html>
